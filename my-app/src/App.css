@@ -1,0 +1,89 @@
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+body {
+  background-color: rgb(0, 0, 0);
+}
+.App {
+  max-width: 60%;
+  margin: 0 auto;
+  height: 100vh;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  background-color: white;
+}
+.App-header {
+  background-color: #a4508b;
+  background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);; 
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  padding: 2rem;
+  height: 35%;
+}
+
+main {
+  padding: 1rem;
+}
+form {
+  margin-top: 1.5rem;
+}
+.form-control {
+  width: 30%;
+  border-radius: 0%;
+  margin-bottom: 1.5rem;
+}
+input[type=text], textarea {
+  outline: none;
+  padding: 10px 10px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #d6d1d5
+}
+
+input[type=text]:focus, textarea:focus {
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+input {
+  width: 20%;
+}
+
+.all-recipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.recipe {
+  flex: 0 0 30%;
+  /* background-color: #ecf0f1; */
+  background-color: #f8ceec;
+background-image: linear-gradient(315deg, #f8ceec 0%, #a88beb 74%);
+
+  border-radius: 0.25rem;
+  margin: 1rem;
+  padding: 1rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.recipe:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+.recipe button {
+
+}
+
+.recipe-date {
+  color: #747680;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
